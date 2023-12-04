@@ -1,14 +1,4 @@
-import { file } from "bun";
-
-export const parseFileToLineArray = async (
-  filePath: string,
-  limit?: number
-) => {
-  const f = file(filePath);
-  const content = await f.text();
-  const arr = content.split("\n");
-  return limit ? arr.splice(0, limit) : arr;
-};
+import { parseFileToLineArray } from "../shared/utils";
 
 export const part1 = async (limit?: number) => {
   const array = await parseFileToLineArray("./day1/part-1-input.txt", limit);

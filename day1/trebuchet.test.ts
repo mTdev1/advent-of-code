@@ -1,7 +1,7 @@
 import { describe, expect, it } from "bun:test";
 import { part1, part2 } from "./trebuchet";
 
-describe("Puzzle part 1", () => {
+describe("Day 1 Puzzle part 1", () => {
   it("Test input by first three lines correct solution", async () => {
     expect(await part1(3)).toBe(124);
   });
@@ -15,7 +15,7 @@ describe("Puzzle part 1", () => {
   });
 });
 
-describe("Puzzle part 2", () => {
+describe("Day 1 Puzzle part 2", () => {
   it("Example input correct solution", async () => {
     expect(await part2("./day1/part-2-test-input.txt")).toBe(281);
   });
