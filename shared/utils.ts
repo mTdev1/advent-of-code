@@ -9,3 +9,7 @@ export const parseFileToLineArray = async (
   const arr = content.split("\n");
   return limit ? arr.splice(0, limit) : arr;
 };
+
+export const onesArrayOfLength = (length: number) => {
+  return [...Array(length)].map(() => 1);
+};

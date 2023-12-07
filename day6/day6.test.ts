@@ -12,7 +12,7 @@ describe.skip("Day 6 Puzzle part 1", () => {
   });
 });
 
-describe("Day 6 Puzzle part 2", () => {
+describe.skip("Day 6 Puzzle part 2", () => {
   it("Example input correct solution", async () => {
     expect(await part2("./day6/part-1-test-input.txt")).toBe(71503);
   });
